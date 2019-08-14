@@ -1,48 +1,50 @@
 <?xml version="1.0"?>
 <package>
     <name>Dextrous_Extendcatalog</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <stability>stable</stability>
     <license>Open Software License (OSL)</license>
     <channel>community</channel>
     <extends/>
-    <summary>Add Best Seller, Feature, New, Recently ordered &amp; All products to store.</summary>
-    <description>Extend Catalog Extension&#xD;
+    <summary>Add Top Seller Product, Featured Product, New Product , Recently ordered Product and All products to store.</summary>
+    <description>Extend Catalog Extension:&#xD;
+	- Using this extension you can show Top Seller Product, Featured Product, NewProduct , Recently ordered Product and All products blocks with limited number of products on the home page and also show the all products of that block by navigating the "View All" link.&#xD;
+	- By adding link of all products you can show all products of your store without filter of categories and subcategories.&#xD;
+	&#xD;
+Key Features:&#xD;
+	- Ability to Enable/Disable each block from admin configuration.&#xD;
+	- Ability to specify the maximum number of products display on the home page for each block.&#xD;
+	- Ability to specify the block title.&#xD;
+	- Separate functionality for each block, so you can add required blocks only.&#xD;
+	&#xD;
+Steps to configure the each block on the home page:&#xD;
+	- Go to admin pannel.&#xD;
+	- Navigate To CMS-&gt;Pages and select 'home' page.&#xD;
+	- Edit Page Content section add below code as per each block.&#xD;
+	&#xD;
+To Show Newproduct products:&#xD;
+	{{block type="extendcatalog/newproduct_home_list" name="newproduct_list" template="extendcatalog/home_newproduct.phtml"}}&#xD;
+	&#xD;
+To Show Featured products:&#xD;
+	{{block type="extendcatalog/featured_home_list" name="featured_list" template="extendcatalog/home_featured.phtml"}}	&#xD;
+	- Also There 'featured' attribute label as 'Is Featured' is added to default attribute set, Now You need to to select value as 'yes' to show product in featured product's list.&#xD;
 &#xD;
-Using this extension you can show Best Seller, New, Feature,Recently Ordered &amp; All Products blocks with limited number of products on the home page and also show the all products of that block by navigating the &#x201C;View All&#x201D; link. .&#xD;
+To Show Most Viewed products:&#xD;
+	{{block type="extendcatalog/mostviewed_home_list" name="mostviewed_list" template="extendcatalog/home_mostviewed.phtml"}}&#xD;
+	&#xD;
+To Show Top Sellers products:&#xD;
+	{{block type="extendcatalog/bestsellers_home_list" name="bestsellers_list" template="extendcatalog/home_bestsellers.phtml"}}&#xD;
 &#xD;
-By adding link of all products you can show all products of your website without filter of categories and subcategories&#xD;
-&#xD;
-Key Features:-&#xD;
-&#xD;
-Ability to Enable/Disable each block from admin configuration&#xD;
-Ability to specify the maximum number of products display on the home page for each block&#xD;
-Ability to specify the block title&#xD;
-Separate functionality for each block, so you can add required blocks only&#xD;
-Steps to configure the each block on the home page:-&#xD;
-&#xD;
-Go to admin pannel.&#xD;
-Open Home Page CMS Page&#xD;
-In Page Content section add below code&#xD;
-&#xD;
-To see Bestsellers products &#xD;
-{{block type="extendcatalog/bestsellers_home_list" name="bestsellers_list" template="extendcatalog/home_bestsellers.phtml"}}&#xD;
-To see Featured products &#xD;
-{{block type="extendcatalog/featured_home_list" name="featured_list" template="extendcatalog/home_featured.phtml"}} &#xD;
-In Default attribute set &gt;&gt; 'Is Featured' attributes is added. You need to select &#x201C;yes&#x201D; value to show product as feature product&#xD;
-To see Newproduct products &#xD;
-{{block type="extendcatalog/newproduct_home_list" name="newproduct_list" template="extendcatalog/home_newproduct.phtml"}}&#xD;
-&#xD;
-To see RecentlyOrdered products &#xD;
-{{block type="extendcatalog/lastordered_home_list" name="lastordered_home_list" template="extendcatalog/home_lastordered.phtml"}}&#xD;
-To see All products without any category filter &#xD;
-href=" echo $this-&gt;getUrl('extendcatalog/index/allproduct');" for All Products link&#xD;
-</description>
-    <notes>Add Best Seller, Feature, New, Recently ordered &amp; All products to store.</notes>
+To Show RecentlyOrdered products:&#xD;
+	{{block type="extendcatalog/lastordered_home_list" name="lastordered_home_list" template="extendcatalog/home_lastordered.phtml"}}&#xD;
+	&#xD;
+To Show All products without any category filter:&#xD;
+	- add link as &lt;a href="echo $this-&gt;getUrl('extendcatalog/index/allproduct');"&gt;All Products&lt;/a&gt;</description>
+    <notes>Added Most viewed product.</notes>
     <authors><author><name>Hemant kumar sharma</name><user>hemantkr</user><email>hemant7677@gmail.com</email></author></authors>
-    <date>2014-09-21</date>
-    <time>01:42:07</time>
-    <contents><target name="magelocal"><dir name="Dextrous"><dir name="Extendcatalog"><dir name="Block"><dir name="Allproducts"><file name="List.php" hash="b12a36e8a2bf14694201a147ca524347"/></dir><dir name="Bestsellers"><dir name="Home"><file name="List.php" hash="786a078fbf8e3007161ff464cd4bd761"/></dir><file name="List.php" hash="7e5d4e5d9b9e1bbf81f7b65d350506ae"/></dir><file name="Extendcatalog.php" hash="c0bf06bc165e2e8cf6a90470b6cbc7ec"/><dir name="Featured"><dir name="Home"><file name="List.php" hash="f49fbb9609107b11139b1d2f1e2f5361"/></dir><file name="List.php" hash="a655eaacbfcc01ced3b79a9fa5cf1b51"/></dir><dir name="Lastordered"><dir name="Home"><file name="List.php" hash="61789ccca7e8efa684661ce5c7c564fc"/></dir><file name="List.php" hash="eff760a92ac1f423953342ad866fb493"/></dir><dir name="Newproduct"><dir name="Home"><file name="List.php" hash="eaaaee9ae8fb528dc536430681acdd8a"/></dir><file name="List.php" hash="ceddd9b7f6d0cf40b04e14faff75d696"/></dir></dir><dir name="Helper"><file name="Data.php" hash="f72e8961bd95a9320e53381761c7c0e7"/></dir><dir name="Model"><file name="Extendcatalog.php" hash="ba8f1bf6d4ed9c2b2c2fe64e539ba48b"/><dir name="Mysql4"><dir name="Extendcatalog"><file name="Collection.php" hash="6c762ca94521405c953b4fccc08e326a"/></dir><file name="Extendcatalog.php" hash="155c09435a2dafe6c800b4a572c34474"/></dir><file name="Status.php" hash="4dc8da019815361aa692c6c7a68e8621"/></dir><dir name="controllers"><file name="IndexController.php" hash="bfb271edd23b1f1069ebcf7d4ba63c6f"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f94e23f7fc9cd0065eeb42309a169f17"/><file name="config.xml" hash="5ac15001daa6b2818a7e21abcc2635be"/><file name="system.xml" hash="b0e961fb133cfacaf61eabaec6710159"/></dir><dir name="sql"><dir name="extendcatalog_setup"><file name="mysql4-install-0.1.0.php" hash="da1797c1b3d77ae8a140dfd894f139bb"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><dir name="extendcatalog"><file name="extendcatalog.xml" hash="31b7d8608e29e77e762df388eed08e53"/></dir></dir><dir name="template"><dir name="extendcatalog"><file name="home_bestsellers.phtml" hash="b94b315e9c74dd65f0836ae7cef2a452"/><file name="home_featured.phtml" hash="e2cb9493179335444b3728bc6881b5a5"/><file name="home_lastordered.phtml" hash="19f091332581acdf5622c4236ed31f19"/><file name="home_newproduct.phtml" hash="038ffa572f7f44661c63aac14942b812"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Dextrous_Extendcatalog.xml" hash="be360321705b86c3d6e22b47b5ea79c2"/></dir></target></contents>
+    <date>2014-10-11</date>
+    <time>12:05:37</time>
+    <contents><target name="magelocal"><dir name="Dextrous"><dir name="Extendcatalog"><dir name="Block"><dir name="Allproducts"><file name="List.php" hash="b12a36e8a2bf14694201a147ca524347"/></dir><dir name="Bestsellers"><dir name="Home"><file name="List.php" hash="786a078fbf8e3007161ff464cd4bd761"/></dir><file name="List.php" hash="7e5d4e5d9b9e1bbf81f7b65d350506ae"/></dir><file name="Extendcatalog.php" hash="c0bf06bc165e2e8cf6a90470b6cbc7ec"/><dir name="Featured"><dir name="Home"><file name="List.php" hash="f49fbb9609107b11139b1d2f1e2f5361"/></dir><file name="List.php" hash="a655eaacbfcc01ced3b79a9fa5cf1b51"/></dir><dir name="Lastordered"><dir name="Home"><file name="List.php" hash="61789ccca7e8efa684661ce5c7c564fc"/></dir><file name="List.php" hash="eff760a92ac1f423953342ad866fb493"/></dir><dir name="Mostviewed"><dir name="Home"><file name="List.php" hash="d101e5ab57612fc58295a15b1219e66f"/></dir><file name="List.php" hash="1eeb8f09966af1daf86b40da8f6fa392"/></dir><dir name="Newproduct"><dir name="Home"><file name="List.php" hash="eaaaee9ae8fb528dc536430681acdd8a"/></dir><file name="List.php" hash="ceddd9b7f6d0cf40b04e14faff75d696"/></dir></dir><dir name="Helper"><file name="Data.php" hash="f72e8961bd95a9320e53381761c7c0e7"/></dir><dir name="Model"><file name="Extendcatalog.php" hash="ba8f1bf6d4ed9c2b2c2fe64e539ba48b"/><dir name="Mysql4"><dir name="Extendcatalog"><file name="Collection.php" hash="6c762ca94521405c953b4fccc08e326a"/></dir><file name="Extendcatalog.php" hash="155c09435a2dafe6c800b4a572c34474"/></dir><file name="Status.php" hash="4dc8da019815361aa692c6c7a68e8621"/></dir><dir name="controllers"><file name="IndexController.php" hash="c9c5c1f788eedc85cd003f355b47df22"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f94e23f7fc9cd0065eeb42309a169f17"/><file name="config.xml" hash="8f7153e79014d6c5d639b8634e35448f"/><file name="system.xml" hash="a0efd118edb56ef7b4795559b98ca947"/></dir><dir name="sql"><dir name="extendcatalog_setup"><file name="mysql4-install-0.1.0.php" hash="da1797c1b3d77ae8a140dfd894f139bb"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><dir name="extendcatalog"><file name="extendcatalog.xml" hash="f437da3c4b624699835b7d80ce17b15c"/></dir></dir><dir name="template"><dir name="extendcatalog"><file name="home_bestsellers.phtml" hash="b94b315e9c74dd65f0836ae7cef2a452"/><file name="home_featured.phtml" hash="e2cb9493179335444b3728bc6881b5a5"/><file name="home_lastordered.phtml" hash="19f091332581acdf5622c4236ed31f19"/><file name="home_mostviewed.phtml" hash="48b06ee9fb4b988ccdea2c42f982b7e2"/><file name="home_newproduct.phtml" hash="038ffa572f7f44661c63aac14942b812"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Dextrous_Extendcatalog.xml" hash="e9e5894cc9f6128514615b6df2c59406"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.6.0.0</min><max>1.9.0.1</max></package><extension><name>gd</name><min></min><max></max></extension></required></dependencies>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

@@ -34,6 +34,17 @@
 		</reference>
     </extendcatalog_index_newproduct>
 	
+	<extendcatalog_index_mostviewed>
+        <reference name="content">
+			<block type="extendcatalog/mostviewed_list" name="mostviewed_list" template="catalog/product/list.phtml" >
+				<block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                	<block type="page/html_pager" name="product_list_toolbar_pager" />
+                </block>
+                <action method="setToolbarBlockName"><name>product_list_toolbar</name></action>
+            </block>
+		</reference>
+    </extendcatalog_index_mostviewed>
+	
 	<extendcatalog_index_allproduct>
 		<reference name="content">
         	<block type="extendcatalog/allproducts_list" name="product_all_list" template="catalog/product/list.phtml">

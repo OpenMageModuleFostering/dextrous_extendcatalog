@@ -20,7 +20,7 @@
                 <config1 translate="label" module="extendcatalog">
                     <label>Topsellers Configuration</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>10</sort_order>
+                    <sort_order>40</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -128,7 +128,7 @@
 				<config4 translate="label" module="extendcatalog">
                     <label>New Product Configuration</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>40</sort_order>
+                    <sort_order>10</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
@@ -164,33 +164,6 @@
 				<config5 translate="label" module="extendcatalog">
                     <label>All Product Configuration</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>50</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-						<active translate="label">
-	                      <label>Enabled</label>
-	                      <frontend_type>select</frontend_type>
-	                      <source_model>adminhtml/system_config_source_yesno</source_model>
-	                      <sort_order>1</sort_order>
-	                      <show_in_default>1</show_in_default>
-		                  <show_in_website>1</show_in_website>
-		                  <show_in_store>1</show_in_store>
-	                  	</active>
-                        <title translate="label" module="extendcatalog">
-                            <label>Title</label>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>40</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </title>
-                    </fields>
-                </config5>
-				<config6 translate="label" module="extendcatalog">
-                    <label>Promotional Product Configuration</label>
-                    <frontend_type>text</frontend_type>
                     <sort_order>60</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
@@ -205,29 +178,20 @@
 		                  <show_in_website>1</show_in_website>
 		                  <show_in_store>1</show_in_store>
 	                  	</active>
-						<max_product translate="label" module="extendcatalog">
-                            <label>Maximum No Of Products To Dispay On Home</label>
-                            <frontend_type>text</frontend_type>
-                            <validate>validate-greater-than-zero</validate>
-                            <sort_order>10</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                        </max_product>
                         <title translate="label" module="extendcatalog">
                             <label>Title</label>
                             <frontend_type>text</frontend_type>
-                            <sort_order>40</sort_order>
+                            <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </title>
                     </fields>
-                </config6>
+                </config5>
 				<config7 translate="label" module="extendcatalog">
                     <label>Recently Ordered Product Configuration</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>70</sort_order>
+                    <sort_order>40</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
