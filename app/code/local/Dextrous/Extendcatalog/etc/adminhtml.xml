@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+    <adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+      					<children>
+      						<config>
+      							<children>
+      								<extendcatalog translate="title" module="extendcatalog">
+      									<title>Extend Catalog Configuration</title>
+      								</extendcatalog>
+      							</children>
+      						</config>
+      					</children>
+      				</system>
+						<Dextrous_Extendcatalog>
+							<title>Extend Catalog  Module</title>
+							<sort_order>10</sort_order>
+						</Dextrous_Extendcatalog>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>

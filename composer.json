@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Dextrous_Extendcatalog",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Add Best Seller, Feature, New, Recently ordered & All products to store.",
+    "authors": [
+    {
+        "name": "Hemant kumar sharma",
+        "email": "hemant7677@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
