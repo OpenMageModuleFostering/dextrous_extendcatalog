@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Dextrous_Extendcatalog",
+    "name": "openmage-module-fostering\/dextrous_extendcatalog",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Add Top Seller Product, Featured Product, New Product , Recently ordered Product and All products to store.",
     "authors": [
